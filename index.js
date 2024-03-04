@@ -14,7 +14,7 @@ const n = parseInt(prompt("Enter a number: "));
  * etc. The number 0, fractions, decimals, and negative numbers
  * are not natural numbers.
  */
-let num = undefined;
+let num = ;
 
 // DO NOT CHANGE ANYTHING BELOW THIS.
 console.log(num);
