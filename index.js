@@ -15,6 +15,21 @@ const n = parseInt(prompt("Enter a number: "));
  * are not natural numbers.
  */
 let num = undefined;
+for (let currentNum = n; currentNum >= 2; currentNum--) {
+  let isPrime = true; 
+
+  for (let i = 2; i * i <= currentNum; i++) {
+    if (currentNum % i === 0) {
+      isPrime = false; 
+      break; 
+    }
+  }
+
+  if (isPrime) {
+    num = currentNum; 
+    break; 
+  }
+}
 
 // DO NOT CHANGE ANYTHING BELOW THIS.
 console.log(num);
